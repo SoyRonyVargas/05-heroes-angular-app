@@ -1,0 +1,9 @@
+
+
+.containerMain
+{
+    height: calc( 100vh - 5rem );
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}

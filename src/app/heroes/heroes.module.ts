@@ -9,6 +9,10 @@ import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { NewPageComponent } from './pages/new-page/new-page.component';
 import { ByIdComponent } from './pages/by-id/by-id.component';
 import { EditHeroComponent } from './pages/edit-hero/edit-hero.component';
+import { HeroeService } from './services/heroe.service';
+import { CardHeroComponent } from './components/card-hero/card-hero.component';
+import { HeroImagePipe } from './pipes/hero-image.pipe';
+import { HeroCharactersPipe } from './pipes/hero-characters.pipe';
 
 
 @NgModule({
@@ -19,11 +23,17 @@ import { EditHeroComponent } from './pages/edit-hero/edit-hero.component';
     SearchPageComponent,
     NewPageComponent,
     ByIdComponent,
-    EditHeroComponent
+    EditHeroComponent,
+    CardHeroComponent,
+    HeroImagePipe,
+    HeroCharactersPipe
   ],
   imports: [
     CommonModule,
     HeroesRoutingModule
+  ],
+  providers: [
+    HeroeService
   ]
 })
 export class HeroesModule { }
